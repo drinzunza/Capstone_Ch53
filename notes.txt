@@ -1,0 +1,25 @@
+Create a venv
+python3 -m venv venv
+
+
+Activate the venv
+Win: venv\Scripts\activate
+
+Mac: souce venv/bin/activate
+
+
+Install django:
+python3 -m pip install django
+
+
+Create a django project:
+django-admin startproject config .
+
+
+Initialize the git repo:
+git init
+
+
+
+Create a django app:
+python3 manage.py startapp pages
