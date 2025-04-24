@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}All your notes{% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/note-list.css'%}">
+{% endblock %}
+
+{% block content %}
+<div class="note-list">
+    <div class="header">
+        <h1>Your notes</h1>
+        <a href="{% url 'note_create' %}" class="btn btn-new btn-primary">
+            <i class="fa-solid fa-plus"></i>
+            Create new note            
+        </a>
+    </div>
+
+    <div class="all-notes">
+        {% for note in all_notes %}
+            <div class="note-item">
+
+                {% if note.image %}
+                <img src="{{note.image.url}}">
+                {% else %}
+                <img src="{% static 'imgs/no-image.jpg' %}">
+                {% endif %}
+
+                <h5>{{note.title}}</h5>             
+                <label>{{note.created_on}}</label>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

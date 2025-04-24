@@ -8,7 +8,57 @@
 {% endblock %}
 
 {% block content %}
-<h1>Welcome!</h1>
+<div class="row">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Platform</h1>
+            <p class="hero-subtitle">Discover amazing features and possibilities</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </div>
+
+    <section class="features-section">
+        <h2>Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://picsum.photos/200/200" alt="Feature 1">
+                <h3>Easy to Use</h3>
+                <p>Simple and intuitive interface for the best user experience</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://picsum.photos/201/200" alt="Feature 2">
+                <h3>Powerful Tools</h3>
+                <p>Advanced features to help you achieve your goals</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://picsum.photos/202/200" alt="Feature 3">
+                <h3>Secure Platform</h3>
+                <p>Your data is safe with our advanced security measures</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best service to our users. Our team works tirelessly to ensure you have the best experience possible.</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Happy Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Features</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 {% endblock %}
 
 {% block js %}

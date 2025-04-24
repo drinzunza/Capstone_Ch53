@@ -1,5 +1,178 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(2deg, #385a7f 0%, #222222 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff5252;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 20px;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: var(--bs-gray-100);
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* About Section */
+.about-section {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: var(--bs-primary);
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1.1em;
+}
 
 h1 {
     color: darkcyan;
     text-align: center;
+}
+
+
+
+@media (max-width:767px) {
+    /* Mobiles */
+
+    .features-grid {     
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-grid .feature-card p {
+        display: none;
+    }
+
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+        gap: unset;
+        margin-top: 40px; 
+    }
+
+    .about-section {
+        padding: 20px 10px;
+    }
+
+    .stats-container {
+        margin-top:5px;
+    }
+
+    .stat-item {
+        padding: 0;
+    }
+
+    .features-section {
+        padding: 20px 0px;
+    }
+
 }

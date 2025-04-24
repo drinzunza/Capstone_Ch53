@@ -1,0 +1,16 @@
+
+.note-create .field {
+    margin-bottom: 12px;    
+}
+
+
+.note-create .field label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.note-create form {
+    margin-top:3rem;
+}
